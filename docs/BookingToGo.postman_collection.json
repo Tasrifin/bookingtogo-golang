@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "cca9aed8-7b8a-40fe-93e8-aa6abb15247a",
+		"name": "BookingToGo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9794629"
+	},
+	"item": [
+		{
+			"name": "Get All Customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/customers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers"
+					],
+					"query": [
+						{
+							"key": "start_date",
+							"value": "2023-06-28 00:00:00",
+							"disabled": true
+						},
+						{
+							"key": "end_date",
+							"value": "2023-06-28 23:59:59",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Customer By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/customer/18",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"18"
+					],
+					"query": [
+						{
+							"key": "start_date",
+							"value": "2023-06-28 00:00:00",
+							"disabled": true
+						},
+						{
+							"key": "end_date",
+							"value": "2023-06-28 23:59:59",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
